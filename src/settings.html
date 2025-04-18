@@ -12,16 +12,18 @@
 
 <body>
     <div data-hydrate="nav.html"></div>
-    <h1>Settings</h1>
+    <h1 class="text-center">Settings</h1>
 
-    <form class="mt-3" id="settings-form">
-        <div class="form-group">
-            <label for="currency-select">Currency:</label>
-            <!-- Filled in using the frankfurter API -->
-            <select id="currency-select" name="currency-select"></select>
-        </div>
-        <button type="submit" class="btn btn-primary col-sm-1" id="settings-save">Save</button>
-    </form>
+    <div class="center">
+        <form class="mt-3" id="settings-form">
+            <div class="form-group row">
+                <label for="currency-select">Currency:</label>
+                <!-- Filled in using the frankfurter API -->
+                <select id="currency-select" name="currency-select"></select>
+            </div>
+            <button type="submit" class="btn btn-primary row" id="settings-save">Save</button>
+        </form>
+    </div>
 
     <script src="scripts/settings.js"></script>
     <script src="scripts/dynamic-loading.js"></script>
