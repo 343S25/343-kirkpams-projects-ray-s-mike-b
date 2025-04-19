@@ -1,0 +1,396 @@
+[
+  {
+    "name": "DigitalOcean",
+    "website": "https://www.digitalocean.com/",
+    "logo": "https://www.digitalocean.com/_next/static/media/favicon.594d6067.ico",
+    "plans": [
+      {
+        "Plan Name": "1-Shared-0.5GB",
+        "CPUS": "1",
+        "CPU Type": "Shared",
+        "Memory": "0.5",
+        "Storage": "10",
+        "Price": "0.00595",
+        "Free Bandwidth": "500",
+        "Bandwidth Price": "0.01"
+      },
+      {
+        "Plan Name": "1-Shared-1GB",
+        "CPUS": "1",
+        "CPU Type": "Shared",
+        "Memory": "1",
+        "Storage": "25",
+        "Price": "0.00893",
+        "Free Bandwidth": "1000",
+        "Bandwidth Price": "0.01"
+      },
+      {
+        "Plan Name": "1-Shared-2GB",
+        "CPUS": "1",
+        "CPU Type": "Shared",
+        "Memory": "2",
+        "Storage": "50",
+        "Price": "0.01786",
+        "Free Bandwidth": "2000",
+        "Bandwidth Price": "0.01"
+      },
+      {
+        "Plan Name": "2-Shared-2GB",
+        "CPUS": "2",
+        "CPU Type": "Shared",
+        "Memory": "2",
+        "Storage": "60",
+        "Price": "0.02679",
+        "Free Bandwidth": "3000",
+        "Bandwidth Price": "0.01"
+      },
+      {
+        "Plan Name": "2-Shared-4GB",
+        "CPUS": "2",
+        "CPU Type": "Shared",
+        "Memory": "4",
+        "Storage": "80",
+        "Price": "0.03571",
+        "Free Bandwidth": "4000",
+        "Bandwidth Price": "0.01"
+      },
+      {
+        "Plan Name": "4-Shared-8GB",
+        "CPUS": "4",
+        "CPU Type": "Shared",
+        "Memory": "8",
+        "Storage": "160",
+        "Price": "0.07143",
+        "Free Bandwidth": "5000",
+        "Bandwidth Price": "0.01"
+      },
+      {
+        "Plan Name": "8-Shared-16GB",
+        "CPUS": "8",
+        "CPU Type": "Shared",
+        "Memory": "16",
+        "Storage": "320",
+        "Price": "0.14286",
+        "Free Bandwidth": "6000",
+        "Bandwidth Price": "0.01"
+      }
+    ]
+  },
+  {
+    "name": "fly.io",
+    "website": "https://fly.io/",
+    "logo": "https://fly.io/static/images/brand/brandmark.svg",
+    "plans": [
+      {
+        "Plan Name": "shared-cpu-1x",
+        "CPUS": "1",
+        "CPU Type": "Shared",
+        "Memory": "0.25",
+        "Storage": "0",
+        "Price": "0.0027",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "shared-cpu-1x",
+        "CPUS": "1",
+        "CPU Type": "Shared",
+        "Memory": "0.5",
+        "Storage": "0",
+        "Price": "0.0044",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "shared-cpu-1x",
+        "CPUS": "1",
+        "CPU Type": "Shared",
+        "Memory": "1",
+        "Storage": "0",
+        "Price": "0.0079",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "shared-cpu-1x",
+        "CPUS": "1",
+        "CPU Type": "Shared",
+        "Memory": "2",
+        "Storage": "0",
+        "Price": "0.0149",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "shared-cpu-2x",
+        "CPUS": "2",
+        "CPU Type": "Shared",
+        "Memory": "0.5",
+        "Storage": "0",
+        "Price": "0.0054",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "shared-cpu-2x",
+        "CPUS": "2",
+        "CPU Type": "Shared",
+        "Memory": "1",
+        "Storage": "0",
+        "Price": "0.0089",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "shared-cpu-2x",
+        "CPUS": "2",
+        "CPU Type": "Shared",
+        "Memory": "2",
+        "Storage": "0",
+        "Price": "0.0158",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "shared-cpu-2x",
+        "CPUS": "2",
+        "CPU Type": "Shared",
+        "Memory": "4",
+        "Storage": "0",
+        "Price": "0.0297",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "shared-cpu-4x",
+        "CPUS": "4",
+        "CPU Type": "Shared",
+        "Memory": "1",
+        "Storage": "0",
+        "Price": "0.0108",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "shared-cpu-4x",
+        "CPUS": "4",
+        "CPU Type": "Shared",
+        "Memory": "2",
+        "Storage": "0",
+        "Price": "0.0177",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "shared-cpu-4x",
+        "CPUS": "4",
+        "CPU Type": "Shared",
+        "Memory": "4",
+        "Storage": "0",
+        "Price": "0.0316",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "shared-cpu-4x",
+        "CPUS": "4",
+        "CPU Type": "Shared",
+        "Memory": "8",
+        "Storage": "0",
+        "Price": "0.0594",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "shared-cpu-8x",
+        "CPUS": "8",
+        "CPU Type": "Shared",
+        "Memory": "2",
+        "Storage": "0",
+        "Price": "0.0216",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "shared-cpu-8x",
+        "CPUS": "8",
+        "CPU Type": "Shared",
+        "Memory": "4",
+        "Storage": "0",
+        "Price": "0.0355",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "shared-cpu-8x",
+        "CPUS": "8",
+        "CPU Type": "Shared",
+        "Memory": "8",
+        "Storage": "0",
+        "Price": "0.0633",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "shared-cpu-8x",
+        "CPUS": "8",
+        "CPU Type": "Shared",
+        "Memory": "16",
+        "Storage": "0",
+        "Price": "0.1189",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "performance-1x",
+        "CPUS": "1",
+        "CPU Type": "Dedicated",
+        "Memory": "2",
+        "Storage": "0",
+        "Price": "0.0431",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "performance-1x",
+        "CPUS": "1",
+        "CPU Type": "Dedicated",
+        "Memory": "4",
+        "Storage": "0",
+        "Price": "0.0570",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "performance-1x",
+        "CPUS": "1",
+        "CPU Type": "Dedicated",
+        "Memory": "8",
+        "Storage": "0",
+        "Price": "0.0847",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "performance-2x",
+        "CPUS": "2",
+        "CPU Type": "Dedicated",
+        "Memory": "4",
+        "Storage": "0",
+        "Price": "0.0861",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "performance-2x",
+        "CPUS": "2",
+        "CPU Type": "Dedicated",
+        "Memory": "8",
+        "Storage": "0",
+        "Price": "0.1139",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "performance-2x",
+        "CPUS": "2",
+        "CPU Type": "Dedicated",
+        "Memory": "16",
+        "Storage": "0",
+        "Price": "0.1695",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "performance-4x",
+        "CPUS": "4",
+        "CPU Type": "Dedicated",
+        "Memory": "8",
+        "Storage": "0",
+        "Price": "0.1722",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "performance-4x",
+        "CPUS": "4",
+        "CPU Type": "Dedicated",
+        "Memory": "16",
+        "Storage": "0",
+        "Price": "0.2278",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "performance-4x",
+        "CPUS": "4",
+        "CPU Type": "Dedicated",
+        "Memory": "32",
+        "Storage": "0",
+        "Price": "0.3390",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "performance-8x",
+        "CPUS": "8",
+        "CPU Type": "Dedicated",
+        "Memory": "16",
+        "Storage": "0",
+        "Price": "0.3444",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "performance-8x",
+        "CPUS": "8",
+        "CPU Type": "Dedicated",
+        "Memory": "32",
+        "Storage": "0",
+        "Price": "0.4556",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "performance-8x",
+        "CPUS": "8",
+        "CPU Type": "Dedicated",
+        "Memory": "64",
+        "Storage": "0",
+        "Price": "0.6780",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "performance-16x",
+        "CPUS": "16",
+        "CPU Type": "Dedicated",
+        "Memory": "32",
+        "Storage": "0",
+        "Price": "0.6889",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "performance-16x",
+        "CPUS": "16",
+        "CPU Type": "Dedicated",
+        "Memory": "64",
+        "Storage": "0",
+        "Price": "0.9112",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      },
+      {
+        "Plan Name": "performance-16x",
+        "CPUS": "16",
+        "CPU Type": "Dedicated",
+        "Memory": "128",
+        "Storage": "0",
+        "Price": "1.3559",
+        "Free Bandwidth": "0",
+        "Bandwidth Price": "0.02"
+      }
+    ]
+  }
+]

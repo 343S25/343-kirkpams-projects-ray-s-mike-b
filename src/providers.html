@@ -8,90 +8,57 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="icon" href="images/cloudgaugelogo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/provider.css">
+
 </head>
 
 <body>
     <div data-hydrate="nav.html"></div>
-    <h1 class="text-center">Providers</h1>
 
-    <!-- Demo cards / collapsible providers :D -->
-    <div class="d-flex flex-column align-items-center">
-        <div class="container row">
-            <div class="col-md">
-                <div class="card">
-                    <div class="card-header bg-primary-subtle d-flex justify-content-start gap-3">
-                        <!-- <a href="https://aws.amazon.com/"><img src="images/amazonwebserviceslogo.png" alt="AWS logo" length="40px" height="40px"></a> -->
-                        <h2 id="collapseHeader" href="#dropdown" data-bs-toggle="collapse"
-                            data-bs-target="#dropdown">Amazon Web Services</h2>
-                    </div>
-                    <div class="collapse" id="dropdown">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Plan Name</th>
-                                    <th scope="col">CPUS</th>
-                                    <th scope="col">Memory</th>
-                                    <th scope="col">Storage</th>
-                                    <th scope="col">Bandwidth</th>
-                                    <th scope="col">Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>shared-1x</td>
-                                    <td>1</td>
-                                    <td>1GB</td>
-                                    <td>8GB</td>
-                                    <td>0GB</td>
-                                    <td>$2.00</td>
-                                </tr>
-
-                                <tr>
-                                    <td>dedicated-2x</td>
-                                    <td>2</td>
-                                    <td>2GB</td>
-                                    <td>20GB</td>
-                                    <td>1TB</td>
-                                    <td>$5.00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container row">
-            <div class="col-md">
-                <div class="card">
-                    <div class="card-header bg-primary-subtle d-flex justify-content-start">
-                    <h2 id="collapseHeader2" href="#dropdown2" data-bs-toggle="collapse"
-                        data-bs-target="#dropdown2">DigitalOcean</h2>
-                    </div>
-                    <div class="collapse" id="dropdown2">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Plan Name</th>
-                                    <th scope="col">CPUS</th>
-                                    <th scope="col">Memory</th>
-                                    <th scope="col">Storage</th>
-                                    <th scope="col">Bandwidth</th>
-                                    <th scope="col">Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="d-flex justify-content-between align-items-center m-4">
+        <h1>Providers</h1>
     </div>
+    <div id="provider-list" class="container">
+    </div>
+    <template id="provider-template">
+        <div class="provider-card">
+            <div class="provider-info">
+                <img src="images/provider-logo-placeholder.svg" class="provider-icon" alt="Provider Logo">
+                <span class="fw-bold provider-name">Provider Name</span>
+            </div>
+            <div>
+                <a href="#" class="btn btn-link provider-website text-secondary text-decoration-none" target="_blank">
+                    Visit Website <span class="ms-1">&#8599;</span>
+                </a>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#plans-collapse">
+                    View Plans
+                </button>
+            </div>
+        </div>
+        <div class="collapse mt-2" id="plans-collapse">
+            <table class="table">
+                <thead>
+                    <!-- Dynamically insert table header here -->
+                    <tr>
+                        <th>Plan Name</th>
+                        <th>Price</th>
+                        <th>Features</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Plan rows will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </template>
+
+    <script src="scripts/providers.js"></script>
+
 
     <script src="scripts/dynamic-loading.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
