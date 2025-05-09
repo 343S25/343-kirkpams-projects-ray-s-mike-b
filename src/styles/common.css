@@ -3,16 +3,21 @@ form {
 	flex-direction: column;
 	gap: 1rem;
 	max-width: 60em;
+	width: 100%;
 	justify-content: center;
 	flex-grow: 1;
 }
 
 .center {
 	display: flex;
-	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .navbar-brand {
 	font-family: "Roboto", sans-serif;
 	font-weight: 700;
+}
+.hidden {
+	display: none;
 }

@@ -1,0 +1,15 @@
+main {
+	width: 100%;
+	/* border-collapse: collapse; */
+	/* max-width: 60em; */
+}
+.main-content {
+	width: 100%;
+	max-width: 60em;
+}
+
+#provider-logo {
+	width: 40px;
+	height: 40px;
+	margin-right: 1rem;
+}

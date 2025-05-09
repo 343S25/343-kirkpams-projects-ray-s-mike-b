@@ -4,7 +4,18 @@ const providerTemplate = document.getElementById('provider-template');
 async function loadProviders() {
     const providers = await fetch('data/providers.json');
     const providersData = await providers.json();
-    providersData.forEach(provider => {
+    providersData.forEach((provider) => {
+        console.log(provider);
+        provider.plans = provider.plans.map(plan => {
+            // replace all _ in the keys with spaces
+            const newPlan = {};
+            Object.entries(plan).forEach(([key, value]) => {
+                const newKey = key.replace(/_/g, ' ');
+                newPlan[newKey] = value;
+            });
+            return newPlan;
+        });
+
         const providerElement = providerTemplate.content.cloneNode(true);
         providerElement.querySelector('.provider-name').textContent = provider.name;
         providerElement.querySelector('.provider-icon').src = provider.logo;
@@ -26,14 +37,20 @@ async function loadProviders() {
         });
 
         // Generate table rows dynamically
-        provider.plans.forEach(plan => {
+        provider.plans.forEach((plan) => {
             const tr = document.createElement('tr');
-            Object.entries(plan).forEach(([key, value]) => {
+            Object.entries(plan).forEach(async ([key, value]) => {
                 const td = document.createElement('td');
-                if (['Memory', 'Storage', 'Free Bandwidth'].includes(key)) {
+                if (['Memory', 'Included Storage', 'Included Bandwidth'].includes(key)) {
                     td.textContent = `${value} GB`;
                 } else if (key.toLowerCase().includes('price')) {
                     td.textContent = `$${value}`;
+                    if (key.toLowerCase().includes('additional')) {
+                        td.textContent += ' / GB';
+                    }
+                    if (key == 'Price' || key == "Additional Storage Price") {
+                        td.textContent += ' / hr';
+                    }
                 } else {
                     td.textContent = value;
                 }

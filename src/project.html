@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Requirements form</title>
+    <link rel="icon" href="images/cloudgaugelogo.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/project.css">
+</head>
+
+<body>
+    <div data-hydrate="nav.html"></div>
+    <h1 class="center mt-3" id="page-title">New Project</h1>
+    <main class="center">
+        <div class="main-content">
+            <form class="m-3" id="project-form">
+                <section>
+                    <h2>General</h2>
+                    <div class="m-3">
+                        <div class="form-group row form-inline">
+                            <label for="project-name" class="form-label">Project Name:</label>
+                            <input type="text" name="project-name" id="project-name" class="form-control" required>
+                        </div>
+                        <div class="form-group row form-inline">
+                            <label for="project-desc" class="form-label">Project Description:</label>
+                            <textarea id="project-desc" class="form-control" required></textarea>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Specs</h2>
+                    <div class="m-3">
+                        <div class="form-group row">
+                            <label for="cpu" class="form-label">CPU Kind:</label>
+                            <select class="form-select" aria-label="Kind of CPU Cores" id="cpu-kind" name="cpu-kind"
+                                required>
+                                <option value="Shared" selected>Shared</option>
+                                <option value="Dedicated">Dedicated</option>
+                            </select>
+                        </div>
+                        <div class="form-group row">
+                            <label for="cpu" class="form-label">Num CPU Cores:</label>
+                            <input required min="1" type="number" name="cpu" id="cpu" class="form-control">
+                        </div>
+                        <div class="form-group row">
+                            <label for="storage" class="form-label">Storage (GB):</label>
+                            <input required min="0" type="number" name="storage" id="storage" class="form-control">
+                        </div>
+                        <div class="form-group row">
+                            <label for="memory" class="form-label">Memory (GB):</label>
+                            <input required min="0.25" step="0.25" type="number" name="memory" id="memory"
+                                class="form-control">
+                        </div>
+                        <div class="form-group row">
+                            <label for="bandwidth" class="form-label">Egress Bandwidth per Month (GB):</label>
+                            <input required min="0" type="number" name="bandiwdth" id="bandwidth" class="form-control">
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <table class="table m-3 hidden" id="plan-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Provider</th>
+                                <th scope="col">Plan</th>
+                                <th scope="col">CPUs</th>
+                                <th scope="col">Memory</th>
+                                <th scope="col">Price (hourly)</th>
+                                <th scope="col">Price (monthly)</th>
+                                <th scope="col" aria-hidden="true">Change Plan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img id="provider-logo"><span id="provider-name">fly.io</span></td>
+                                <td id="plan-name"></td>
+                                <td id="plan-cpus"></td>
+                                <td id="plan-memory"></td>
+                                <td id="plan-cost-hour"></td>
+                                <td id="plan-cost-month"></td>
+                                <td><button class="btn btn-primary" id="change-plan-button">Change Plan</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </section>
+                <button type="submit" class="btn btn-primary mt-4" id="calculate-button">Calculate</button>
+            </form>
+        </div>
+
+    </main>
+    <script src="scripts/currency.js"></script>
+    <script src="scripts/storage.js"></script>
+    <script src="scripts/project.js"></script>
+    <script src="scripts/dynamic-loading.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

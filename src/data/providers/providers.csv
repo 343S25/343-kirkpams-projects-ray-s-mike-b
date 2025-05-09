@@ -1,3 +1,4 @@
 name,website,logo
-DigitalOcean,https://www.digitalocean.com/,https://www.digitalocean.com/_next/static/media/favicon.594d6067.ico
-fly.io,https://fly.io/,https://fly.io/static/images/brand/brandmark.svg
+DigitalOcean,https://www.digitalocean.com/,./images/digitalocean.ico
+fly.io,https://fly.io/,./images/fly.io.svg
+Hetzner,https://www.hetzner.com/,./images/hetzner.ico

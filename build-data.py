@@ -27,9 +27,20 @@ try:
         if os.path.exists(plan_file):
             with open(plan_file, mode='r', encoding='utf-8') as csv_file:
                 reader = csv.DictReader(csv_file)
+                reader.fieldnames = [field.replace(' ', '_')
+                                     for field in reader.fieldnames]
                 for row in reader:
-                    if (row['Plan Name'] == ""):
-                        row['Plan Name'] = f'{row['CPUS']}-{row['CPU Type']}-{row['Memory']}GB'
+                    # Convert numeric fields to numbers
+                    for key, value in row.items():
+                        if value.isdigit():
+                            row[key] = int(value)
+                        else:
+                            try:
+                                row[key] = float(value)
+                            except ValueError:
+                                pass
+                    if (row['Plan_Name'] == ""):
+                        row['Plan_Name'] = f"{row['CPUS']}-{row['CPU_Type']}-{row['Memory']}GB"
                     providers[provider_name]['plans'].append(row)
 
     # Convert providers dictionary to a list

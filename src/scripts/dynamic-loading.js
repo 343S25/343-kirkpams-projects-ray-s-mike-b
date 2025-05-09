@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
     const placeholders = document.querySelectorAll("[data-hydrate]");
-    const cacheVersion = "v1"; // Update this version to invalidate the cache
+    const cacheVersion = "v2"; // Update this version to invalidate the cache
     for (const el of placeholders) {
         const src = el.getAttribute("data-hydrate");
         const cacheKey = `cache:${cacheVersion}:${src}`;
